@@ -12,13 +12,13 @@
 <p>}</p>
 <p>&nbsp;</p>
 <p>3、Spring配置文件配置HttpServer对象</p>
-<p>&lt;bean name="httpServer" class="com.ponycar.httpserver.server.HttpServer"&gt;</p>
-<p>&lt;property name="port" value="${httpserver.port}" /&gt;</p>
-<p>&lt;property name="compress" value="${httpserver.compress}" /&gt;</p>
-<p>&lt;property name="keepalive" value="${httpserver.keepalive}" /&gt;</p>
-<p>&lt;property name="contentType" value="${httpserver.contenttype}" /&gt;</p>
-<p>&lt;property name="charset" value="${httpserver.charset}" /&gt;</p>
-<p>&lt;/bean&gt;</p>
+<p>&nbsp; &nbsp; &lt;bean name="httpServer" class="com.ponycar.httpserver.server.HttpServer"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;property name="port" value="${httpserver.port}" /&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;property name="compress" value="${httpserver.compress}" /&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;property name="keepalive" value="${httpserver.keepalive}" /&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;property name="contentType" value="${httpserver.contenttype}" /&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;property name="charset" value="${httpserver.charset}" /&gt;</p>
+<p>&nbsp; &nbsp; &lt;/bean&gt;</p>
 <p>&nbsp;</p>
 <p>4、.properties文件配置Http服务器参数</p>
 <p>httpserver.port=8090</p>
@@ -28,13 +28,10 @@
 <p>httpserver.charset=UTF-8</p>
 <p>&nbsp;</p>
 <p>4、启动Http服务</p>
-<p>public static void main(String[] args) {</p>
-<p>try {</p>
-<p>new ClassPathXmlApplicationContext("spring/applicationContext.xml");</p>
-<p>} catch (Exception e) {</p>
-<p>e.printStackTrace();</p>
-<p>}</p>
-<p>}</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>&nbsp; &nbsp; public static void main(String[] args) {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; try {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; new ClassPathXmlApplicationContext("spring/applicationContext.xml");</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; } catch (Exception e) {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; e.printStackTrace();</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; }</p>
